@@ -1,0 +1,1606 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<meta name="referrerpolicy" content="no-referrer-when-downgrade">
+<title>QALQAN DETAIL — Детейлинг студия в Алматы</title>
+<meta name="description" content="Премиальный детейлинг в Алматы. Керамика, PPF, полировка, химчистка, тонировка. Защитите автомобиль у профессионалов — QALQAN DETAIL.">
+<meta property="og:title" content="QALQAN DETAIL — Детейлинг студия в Алматы">
+<meta property="og:description" content="Премиальный детейлинг в Алматы. Керамика, PPF, полировка, химчистка.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- JSON-LD Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoDealer",
+  "name": "QALQAN DETAIL",
+  "description": "Премиальная детейлинг студия в Алматы",
+  "address": {"@type": "PostalAddress", "addressLocality": "Алматы", "addressCountry": "KZ"},
+  "telephone": "+7 707 000 00 00",
+  "url": "https://qalqan-detail.kz"
+}
+</script>
+
+<style>
+:root {
+  --black: #0a0a0a;
+  --dark: #111111;
+  --dark2: #1a1a1a;
+  --dark3: #242424;
+  --gold: #c9a84c;
+  --gold-light: #e8c97a;
+  --gold-dim: rgba(201,168,76,0.15);
+  --white: #ffffff;
+  --white80: rgba(255,255,255,0.8);
+  --white40: rgba(255,255,255,0.4);
+  --white10: rgba(255,255,255,0.07);
+  --red: #e03030;
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-body: 'Montserrat', sans-serif;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+/* nav */
+
+/* ─── NAV ─── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 22px 60px;
+  transition: all 0.4s ease;
+  background: transparent;
+}
+nav.scrolled {
+  background: rgba(10,10,10,0.95);
+  backdrop-filter: blur(20px);
+  padding: 14px 60px;
+  border-bottom: 1px solid rgba(201,168,76,0.15);
+}
+.nav-logo {
+  font-family: var(--font-display);
+  font-size: 24px;
+  letter-spacing: 4px;
+  color: var(--white);
+  text-decoration: none;
+}
+.nav-logo span { color: var(--gold); }
+.nav-links { display: flex; gap: 36px; list-style: none; }
+.nav-links a {
+  font-size: 11px; font-weight: 600; letter-spacing: 2.5px;
+  text-transform: uppercase; color: var(--white80);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--gold); }
+.nav-cta {
+  background: var(--gold);
+  color: var(--black) !important;
+  padding: 10px 24px;
+  font-size: 11px !important;
+  letter-spacing: 2px !important;
+  font-weight: 700 !important;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s !important;
+  display: inline-block;
+}
+.nav-cta:hover { background: var(--gold-light) !important; transform: translateY(-1px); }
+
+/* Hamburger */
+.nav-burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+.nav-burger span { width: 26px; height: 2px; background: var(--white); transition: all 0.3s; }
+
+/* Mobile nav overlay */
+.nav-mobile {
+  display: none;
+  position: fixed; inset: 0; z-index: 90;
+  background: rgba(10,10,10,0.98);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+}
+.nav-mobile.open { display: flex; }
+.nav-mobile a {
+  font-family: var(--font-display);
+  font-size: 42px;
+  letter-spacing: 4px;
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.nav-mobile a:hover { color: var(--gold); }
+
+/* ─── HERO ─── */
+#hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex; align-items: center;
+  overflow: hidden;
+  background: var(--black);
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background-image: url('hero_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  animation: heroZoom 14s ease-in-out infinite alternate;
+  filter: brightness(0.32);
+}
+@keyframes heroZoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.06); }
+}
+.hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(10,10,10,0.7) 0%, transparent 50%, rgba(10,10,10,0.5) 100%);
+}
+/* diagonal gold line */
+.hero-line {
+  position: absolute;
+  top: 0; left: 55%; width: 2px; height: 100%;
+  background: linear-gradient(to bottom, transparent, var(--gold), transparent);
+  opacity: 0.3;
+}
+
+.hero-content {
+  position: relative; z-index: 2;
+  padding: 0 60px;
+  max-width: 900px;
+  animation: fadeUp 1s ease both;
+}
+@keyframes fadeUp {
+  from { opacity:0; transform: translateY(40px); }
+  to { opacity:1; transform: translateY(0); }
+}
+.hero-tag {
+  font-size: 11px; font-weight: 700; letter-spacing: 4px;
+  color: var(--gold); text-transform: uppercase;
+  display: flex; align-items: center; gap: 12px;
+  margin-bottom: 24px;
+  animation: fadeUp 1s 0.2s ease both;
+}
+.hero-tag::before {
+  content: ''; width: 40px; height: 1px; background: var(--gold);
+}
+.hero-h1 {
+  font-family: var(--font-display);
+  font-size: clamp(64px, 10vw, 130px);
+  line-height: 0.88;
+  letter-spacing: 4px;
+  color: var(--white);
+  margin-bottom: 28px;
+  animation: fadeUp 1s 0.35s ease both;
+}
+.hero-h1 em {
+  font-style: normal;
+  color: var(--gold);
+  -webkit-text-stroke: 0px;
+  display: block;
+}
+.hero-sub {
+  font-size: 15px; font-weight: 300;
+  color: var(--white80); line-height: 1.7;
+  max-width: 480px;
+  margin-bottom: 44px;
+  animation: fadeUp 1s 0.5s ease both;
+}
+.hero-btns {
+  display: flex; gap: 16px; flex-wrap: wrap;
+  animation: fadeUp 1s 0.65s ease both;
+}
+.btn-primary {
+  background: var(--gold);
+  color: var(--black);
+  padding: 16px 40px;
+  font-size: 12px; font-weight: 700; letter-spacing: 3px;
+  text-transform: uppercase; text-decoration: none;
+  transition: all 0.25s ease;
+  display: inline-flex; align-items: center; gap: 10px;
+}
+.btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
+.btn-outline {
+  border: 1px solid rgba(255,255,255,0.3);
+  color: var(--white);
+  padding: 16px 40px;
+  font-size: 12px; font-weight: 600; letter-spacing: 3px;
+  text-transform: uppercase; text-decoration: none;
+  transition: all 0.25s ease;
+}
+.btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+
+.hero-stats {
+  position: absolute; bottom: 48px; right: 60px; z-index: 2;
+  display: flex; gap: 48px;
+  animation: fadeUp 1s 0.8s ease both;
+}
+.hero-stat { text-align: right; }
+.hero-stat-num {
+  font-family: var(--font-display);
+  font-size: 48px;
+  line-height: 1;
+  color: var(--gold);
+  letter-spacing: 2px;
+}
+.hero-stat-label {
+  font-size: 10px; font-weight: 600; letter-spacing: 2.5px;
+  text-transform: uppercase; color: var(--white40);
+  margin-top: 4px;
+}
+
+/* Scroll indicator */
+.hero-scroll {
+  position: absolute; bottom: 50px; left: 60px; z-index: 2;
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  animation: fadeUp 1s 1s ease both;
+}
+.scroll-line {
+  width: 1px; height: 60px;
+  background: linear-gradient(to bottom, var(--gold), transparent);
+  animation: scrollPulse 2s ease-in-out infinite;
+}
+@keyframes scrollPulse {
+  0%,100% { opacity: 0.4; transform: scaleY(1); }
+  50% { opacity: 1; transform: scaleY(1.15); }
+}
+.scroll-text {
+  font-size: 9px; font-weight: 700; letter-spacing: 3px;
+  text-transform: uppercase; color: var(--white40);
+  writing-mode: vertical-lr;
+}
+
+/* ─── SECTION BASE ─── */
+section { background: var(--black); }
+.section-label {
+  font-size: 10px; font-weight: 700; letter-spacing: 4px;
+  text-transform: uppercase; color: var(--gold);
+  display: flex; align-items: center; gap: 12px;
+  margin-bottom: 20px;
+}
+.section-label::before { content: ''; width: 32px; height: 1px; background: var(--gold); }
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(42px, 6vw, 76px);
+  letter-spacing: 3px;
+  line-height: 0.92;
+  color: var(--white);
+}
+.section-title span { color: var(--gold); }
+
+/* ─── TICKER ─── */
+.ticker {
+  background: var(--gold);
+  padding: 14px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.ticker-inner {
+  display: inline-block;
+  animation: ticker 28s linear infinite;
+}
+.ticker-inner span {
+  font-size: 11px; font-weight: 800; letter-spacing: 4px;
+  text-transform: uppercase; color: var(--black);
+  padding: 0 40px;
+}
+.ticker-inner span::after {
+  content: '◆';
+  margin-left: 40px;
+  color: rgba(0,0,0,0.3);
+}
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* ─── ABOUT STRIP ─── */
+#about {
+  background: var(--dark);
+  padding: 100px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.about-img-wrap {
+  position: relative;
+  height: 540px;
+}
+.about-img {
+  position: absolute; inset: 0;
+  overflow: hidden;
+}
+.about-img img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  filter: brightness(0.85);
+}
+.about-img-accent {
+  position: absolute;
+  bottom: -20px; right: -20px;
+  width: 180px; height: 180px;
+  border: 1px solid var(--gold);
+  z-index: 0;
+}
+.about-img-num {
+  position: absolute;
+  top: -20px; left: -20px;
+  font-family: var(--font-display);
+  font-size: 120px;
+  color: var(--gold);
+  opacity: 0.08;
+  line-height: 1;
+  z-index: 0;
+}
+.about-content { position: relative; }
+.about-title {
+  font-family: var(--font-display);
+  font-size: clamp(38px, 4vw, 58px);
+  line-height: 0.94;
+  letter-spacing: 2px;
+  margin-bottom: 28px;
+  color: var(--white);
+}
+.about-title em { font-style: normal; color: var(--gold); display: block; }
+.about-text {
+  font-size: 14px; font-weight: 300; line-height: 1.8;
+  color: var(--white80);
+  margin-bottom: 40px;
+}
+.about-facts {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 36px;
+}
+.fact { }
+.fact-num {
+  font-family: var(--font-display);
+  font-size: 44px; letter-spacing: 2px;
+  color: var(--gold); line-height: 1;
+  margin-bottom: 4px;
+}
+.fact-text {
+  font-size: 11px; font-weight: 500; letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--white40);
+}
+
+/* ─── SERVICES ─── */
+#services {
+  background: var(--black);
+  padding: 100px 60px;
+}
+.services-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 64px;
+  gap: 40px;
+}
+.services-head p {
+  font-size: 14px; font-weight: 300; line-height: 1.7;
+  color: var(--white40); max-width: 380px;
+  text-align: right;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+.svc-card {
+  background: var(--dark2);
+  padding: 44px 36px;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+  cursor: default;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 280px;
+}
+.svc-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--gold-dim);
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 1;
+}
+.svc-card:hover { background: var(--dark3); border-bottom-color: var(--gold); }
+.svc-card:hover::before { opacity: 1; }
+.svc-num {
+  font-family: var(--font-display);
+  font-size: 60px;
+  color: rgba(255,255,255,0.04);
+  line-height: 1;
+  margin-bottom: 20px;
+  transition: color 0.3s;
+  position: relative; z-index: 2;
+}
+.svc-card:hover .svc-num { color: rgba(201,168,76,0.1); }
+.svc-icon {
+  width: 48px; height: 48px;
+  margin-bottom: 20px;
+  color: var(--gold);
+  position: relative; z-index: 2;
+}
+.svc-name {
+  font-family: var(--font-display);
+  font-size: 26px;
+  letter-spacing: 2px;
+  color: var(--white);
+  margin-bottom: 12px;
+  position: relative; z-index: 2;
+}
+.svc-desc {
+  font-size: 13px; font-weight: 300; line-height: 1.7;
+  color: var(--white40);
+  margin-bottom: 24px;
+  position: relative; z-index: 2;
+}
+.svc-price {
+  font-size: 12px; font-weight: 700; letter-spacing: 2px;
+  color: var(--gold);
+  position: relative; z-index: 2;
+}
+.svc-arrow {
+  position: absolute; bottom: 36px; right: 36px;
+  width: 32px; height: 32px;
+  border: 1px solid rgba(255,255,255,0.1);
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.3s;
+  opacity: 0;
+  text-decoration: none;
+  color: var(--gold);
+  z-index: 3;
+}
+.svc-card:hover .svc-arrow {
+  opacity: 1;
+  border-color: var(--gold);
+  transform: rotate(45deg);
+}
+
+/* Service card photo */
+.svc-photo {
+  position: absolute; inset: 0;
+  z-index: 0;
+}
+.svc-photo img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.18);
+  transition: filter 0.4s ease, transform 0.5s ease;
+}
+.svc-card:hover .svc-photo img {
+  filter: brightness(0.28);
+  transform: scale(1.05);
+}
+#prices {
+  background: var(--dark);
+  padding: 100px 60px;
+}
+.prices-head {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.prices-head .section-label { justify-content: center; }
+.prices-head .section-label::before { display: none; }
+.prices-tabs {
+  display: flex; justify-content: center;
+  gap: 4px;
+  margin-top: 40px;
+}
+.ptab {
+  padding: 12px 30px;
+  font-size: 11px; font-weight: 700; letter-spacing: 3px;
+  text-transform: uppercase;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--white40);
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.ptab.active, .ptab:hover {
+  background: var(--gold);
+  color: var(--black);
+  border-color: var(--gold);
+}
+.price-panels { }
+.price-panel { display: none; }
+.price-panel.active { display: block; }
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.price-table thead tr {
+  border-bottom: 1px solid rgba(201,168,76,0.3);
+}
+.price-table th {
+  font-size: 10px; font-weight: 700; letter-spacing: 3px;
+  text-transform: uppercase; color: var(--gold);
+  padding: 0 20px 20px;
+  text-align: left;
+}
+.price-table th:last-child { text-align: right; }
+.price-table tbody tr {
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  transition: background 0.2s;
+}
+.price-table tbody tr:hover { background: var(--white10); }
+.price-table td {
+  padding: 22px 20px;
+  font-size: 14px; font-weight: 400;
+  color: var(--white80);
+}
+.price-table td:first-child { font-weight: 600; color: var(--white); }
+.price-table td.price-val {
+  text-align: right;
+  font-family: var(--font-display);
+  font-size: 20px;
+  color: var(--gold);
+  letter-spacing: 1px;
+}
+.price-badge {
+  background: var(--gold);
+  color: var(--black);
+  font-size: 9px; font-weight: 800; letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  margin-left: 10px;
+}
+
+/* ─── BEFORE/AFTER ─── */
+#portfolio {
+  background: var(--black);
+  padding: 100px 60px;
+}
+.portfolio-head { margin-bottom: 60px; }
+.ba-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+.ba-card {
+  position: relative;
+  overflow: hidden;
+  height: 440px;
+}
+.ba-card:first-child { grid-column: span 2; height: 500px; }
+.ba-card:nth-child(2) { height: 500px; }
+.ba-card:nth-child(3),
+.ba-card:nth-child(4),
+.ba-card:nth-child(5) { height: 380px; }
+.ba-img {
+  position: absolute; inset: 0;
+}
+.ba-img img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease, filter 0.4s ease;
+  filter: brightness(0.7);
+}
+.ba-card:hover .ba-img img { transform: scale(1.05); filter: brightness(0.5); }
+.ba-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(10,10,10,0.85) 0%, transparent 60%);
+  z-index: 1;
+}
+.ba-info {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  z-index: 2;
+  padding: 32px;
+  transform: translateY(60px);
+  transition: transform 0.4s ease;
+}
+.ba-card:hover .ba-info { transform: translateY(0); }
+.ba-tag {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--black);
+  font-size: 9px; font-weight: 800; letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  margin-bottom: 12px;
+}
+.ba-car {
+  font-family: var(--font-display);
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+.ba-work {
+  font-size: 12px; font-weight: 400;
+  color: var(--white40);
+}
+
+/* ─── BEFORE/AFTER SLIDER ─── */
+.ba-slider-section {
+  background: var(--dark);
+  padding: 80px 60px;
+}
+.ba-slider-wrap {
+  position: relative;
+  max-width: 900px;
+  margin: 60px auto 0;
+  height: 500px;
+  overflow: hidden;
+  cursor: ew-resize;
+  user-select: none;
+}
+.ba-before, .ba-after {
+  position: absolute; inset: 0;
+}
+.ba-before img, .ba-after img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.ba-after { clip-path: inset(0 50% 0 0); }
+.ba-divider {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: var(--gold);
+  z-index: 3;
+  pointer-events: none;
+}
+.ba-handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px; height: 50px;
+  background: var(--gold);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  z-index: 4;
+  pointer-events: none;
+}
+.ba-handle svg { color: var(--black); }
+.ba-label-before, .ba-label-after {
+  position: absolute; top: 24px; z-index: 5;
+  font-size: 11px; font-weight: 700; letter-spacing: 3px;
+  text-transform: uppercase;
+  background: rgba(10,10,10,0.75);
+  padding: 6px 14px;
+  pointer-events: none;
+}
+.ba-label-before { left: 20px; color: var(--white); }
+.ba-label-after { right: 20px; color: var(--gold); }
+
+/* ─── REVIEWS ─── */
+#reviews {
+  background: var(--black);
+  padding: 100px 60px;
+}
+.reviews-head { margin-bottom: 60px; }
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+.review-card {
+  background: var(--dark2);
+  padding: 36px;
+  border-top: 2px solid transparent;
+  transition: border-color 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+.review-card:hover { border-top-color: var(--gold); }
+.review-stars {
+  color: var(--gold);
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.review-text {
+  font-size: 14px; font-weight: 300; line-height: 1.8;
+  color: var(--white80);
+  flex: 1;
+  margin-bottom: 28px;
+}
+.review-text::before {
+  content: '"';
+  font-family: var(--font-display);
+  font-size: 60px;
+  line-height: 0.5;
+  color: var(--gold);
+  opacity: 0.3;
+  display: block;
+  margin-bottom: 16px;
+}
+.review-author {
+  display: flex; align-items: center; gap: 14px;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  padding-top: 20px;
+}
+.review-ava {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+  background: var(--dark3);
+}
+.review-ava img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.review-name {
+  font-size: 13px; font-weight: 700;
+  color: var(--white);
+  margin-bottom: 3px;
+}
+.review-car {
+  font-size: 11px; font-weight: 400;
+  color: var(--white40);
+}
+
+/* ─── WHY US ─── */
+#why {
+  background: var(--dark);
+  padding: 100px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.why-img-wrap {
+  position: relative;
+  height: 600px;
+}
+.why-img {
+  position: absolute; inset: 0; overflow: hidden;
+}
+.why-img img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+.why-badge {
+  position: absolute;
+  bottom: 40px; left: -30px;
+  background: var(--gold);
+  padding: 24px 32px;
+  z-index: 2;
+}
+.why-badge-num {
+  font-family: var(--font-display);
+  font-size: 52px;
+  color: var(--black);
+  line-height: 1;
+}
+.why-badge-text {
+  font-size: 10px; font-weight: 700; letter-spacing: 2px;
+  text-transform: uppercase; color: var(--black);
+  opacity: 0.7;
+}
+.why-points {
+  display: flex; flex-direction: column; gap: 28px;
+  margin-top: 44px;
+}
+.why-point {
+  display: flex; align-items: flex-start; gap: 20px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.why-point:last-child { border-bottom: none; }
+.why-icon {
+  width: 44px; height: 44px;
+  background: var(--gold-dim);
+  border: 1px solid rgba(201,168,76,0.3);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  color: var(--gold);
+  font-size: 18px;
+}
+.why-title {
+  font-size: 15px; font-weight: 700;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+.why-desc {
+  font-size: 13px; font-weight: 300; line-height: 1.7;
+  color: var(--white40);
+}
+
+/* ─── CONTACTS ─── */
+#contacts {
+  background: var(--black);
+  padding: 100px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+.contacts-left {}
+.contact-info-list {
+  margin-top: 44px;
+  display: flex; flex-direction: column; gap: 28px;
+}
+.contact-item {
+  display: flex; gap: 20px; align-items: flex-start;
+}
+.contact-ico {
+  width: 44px; height: 44px;
+  border: 1px solid rgba(201,168,76,0.3);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  color: var(--gold);
+}
+.contact-label {
+  font-size: 10px; font-weight: 700; letter-spacing: 3px;
+  text-transform: uppercase; color: var(--white40);
+  margin-bottom: 5px;
+}
+.contact-val {
+  font-size: 16px; font-weight: 600;
+  color: var(--white);
+}
+.contact-val a { color: var(--white); text-decoration: none; transition: color 0.2s; }
+.contact-val a:hover { color: var(--gold); }
+.social-row {
+  display: flex; gap: 12px;
+  margin-top: 44px;
+}
+.social-btn {
+  width: 44px; height: 44px;
+  border: 1px solid rgba(255,255,255,0.1);
+  display: flex; align-items: center; justify-content: center;
+  text-decoration: none;
+  color: var(--white40);
+  transition: all 0.25s;
+}
+.social-btn:hover { border-color: var(--gold); color: var(--gold); }
+
+/* Form */
+.contacts-right {}
+.form-title {
+  font-family: var(--font-display);
+  font-size: 44px;
+  letter-spacing: 2px;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+.form-sub {
+  font-size: 13px; font-weight: 300;
+  color: var(--white40); margin-bottom: 36px;
+}
+.form-group { margin-bottom: 16px; }
+.form-group input, .form-group select, .form-group textarea {
+  width: 100%;
+  background: var(--dark2);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: var(--white);
+  padding: 16px 20px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.25s;
+  appearance: none;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder { color: var(--white40); }
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+  border-color: var(--gold);
+}
+.form-group select option { background: var(--dark2); }
+.form-group textarea { resize: none; height: 110px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-submit {
+  width: 100%;
+  background: var(--gold);
+  border: none;
+  color: var(--black);
+  padding: 18px 40px;
+  font-family: var(--font-body);
+  font-size: 12px; font-weight: 800; letter-spacing: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.25s;
+  margin-top: 6px;
+}
+.form-submit:hover { background: var(--gold-light); transform: translateY(-2px); }
+.form-success {
+  display: none;
+  text-align: center;
+  padding: 40px;
+  border: 1px solid var(--gold);
+}
+.form-success-ico {
+  font-size: 40px; margin-bottom: 16px;
+}
+.form-success h3 {
+  font-family: var(--font-display);
+  font-size: 32px; letter-spacing: 2px;
+  color: var(--gold); margin-bottom: 8px;
+}
+.form-success p { font-size: 14px; color: var(--white80); }
+
+/* ─── FOOTER ─── */
+footer {
+  background: var(--dark);
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding: 40px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.footer-logo {
+  font-family: var(--font-display);
+  font-size: 20px; letter-spacing: 4px;
+  color: var(--white);
+}
+.footer-logo span { color: var(--gold); }
+.footer-copy {
+  font-size: 11px; font-weight: 400;
+  color: var(--white40); text-align: center;
+}
+.footer-dev {
+  font-size: 11px; font-weight: 400;
+  color: var(--white40); text-align: right;
+}
+.footer-dev a { color: var(--gold); text-decoration: none; }
+
+/* ─── FLOATING BUTTONS ─── */
+.float-btns {
+  position: fixed;
+  bottom: 32px; right: 32px;
+  z-index: 200;
+  display: flex; flex-direction: column; gap: 12px;
+}
+.float-btn {
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  text-decoration: none;
+  transition: all 0.25s;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+.float-btn:hover { transform: scale(1.1); }
+.float-btn-tg { background: #229ED9; }
+.float-btn-wa { background: #25D366; }
+
+/* ─── SCROLL REVEAL ─── */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── MOBILE ─── */
+@media (max-width: 1024px) {
+  nav { padding: 18px 30px; }
+  nav.scrolled { padding: 12px 30px; }
+  .nav-links { display: none; }
+  .nav-cta { display: none; }
+  .nav-burger { display: flex; }
+  body { cursor: auto; }
+
+  #about { grid-template-columns: 1fr; padding: 70px 30px; gap: 50px; }
+  .about-img-wrap { height: 360px; }
+  #services { padding: 70px 30px; }
+  .services-head { flex-direction: column; align-items: flex-start; }
+  .services-head p { text-align: left; }
+  .services-grid { grid-template-columns: 1fr; }
+  #prices { padding: 70px 30px; }
+  .prices-tabs { flex-wrap: wrap; }
+  .ptab { padding: 10px 20px; }
+  .ba-grid { grid-template-columns: 1fr; }
+  .ba-card:first-child { grid-column: span 1; height: 300px; }
+  .ba-card:nth-child(2) { height: 300px; }
+  .ba-card:nth-child(3),
+  .ba-card:nth-child(4),
+  .ba-card:nth-child(5) { height: 260px; }
+  .ba-card { height: 260px; }
+  #portfolio { padding: 70px 30px; }
+  .ba-slider-section { padding: 70px 30px; }
+  .ba-slider-wrap { height: 280px; }
+  .reviews-grid { grid-template-columns: 1fr; gap: 2px; }
+  #reviews { padding: 70px 30px; }
+  #why { grid-template-columns: 1fr; padding: 70px 30px; gap: 50px; }
+  .why-img-wrap { height: 360px; }
+  .why-badge { left: 10px; }
+  #contacts { grid-template-columns: 1fr; padding: 70px 30px; gap: 50px; }
+  footer { flex-direction: column; text-align: center; padding: 32px 30px; gap: 12px; }
+  .footer-dev { text-align: center; }
+  .hero-content { padding: 0 30px; }
+  .hero-stats { right: 30px; gap: 28px; }
+  .hero-stat-num { font-size: 36px; }
+  .hero-scroll { left: 30px; }
+  .float-btns { bottom: 24px; right: 20px; }
+  .form-row { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .hero-stats { display: none; }
+  .hero-h1 { font-size: 58px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Float buttons -->
+<div class="float-btns">
+  <a href="https://t.me/qalqandetail" target="_blank" class="float-btn float-btn-tg" title="Telegram">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-1.97 9.289c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.932z"/></svg>
+  </a>
+  <a href="https://wa.me/77070000000" target="_blank" class="float-btn float-btn-wa" title="WhatsApp">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="#" class="nav-logo">QALQAN<span>◆</span>DETAIL</a>
+  <ul class="nav-links">
+    <li><a href="#services">Услуги</a></li>
+    <li><a href="#prices">Цены</a></li>
+    <li><a href="#portfolio">Работы</a></li>
+    <li><a href="#reviews">Отзывы</a></li>
+    <li><a href="#contacts">Контакты</a></li>
+  </ul>
+  <a href="#contacts" class="nav-cta">Записаться</a>
+  <div class="nav-burger" id="burger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="nav-mobile" id="mobileMenu">
+  <a href="#services" onclick="toggleMenu()">Услуги</a>
+  <a href="#prices" onclick="toggleMenu()">Цены</a>
+  <a href="#portfolio" onclick="toggleMenu()">Работы</a>
+  <a href="#reviews" onclick="toggleMenu()">Отзывы</a>
+  <a href="#contacts" onclick="toggleMenu()">Контакты</a>
+</div>
+
+<!-- ─── HERO ─── -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-line"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Алматы — Премиум Детейлинг</div>
+    <h1 class="hero-h1">ЗАЩИТА<em>НА УРОВНЕ</em></h1>
+    <p class="hero-sub">Профессиональный детейлинг, керамические покрытия и PPF для тех, кто ценит свой автомобиль. Без компромиссов.</p>
+    <div class="hero-btns">
+      <a href="#contacts" class="btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        Записаться
+      </a>
+      <a href="#portfolio" class="btn-outline">Наши работы</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="hero-stat-num">500+</div>
+      <div class="hero-stat-label">Авто обработано</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">4</div>
+      <div class="hero-stat-label">Года опыта</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">3</div>
+      <div class="hero-stat-label">Мастера в команде</div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <div class="scroll-text">Scroll</div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-inner" id="tickerInner">
+    <span>Полировка кузова</span><span>Керамическое покрытие</span><span>PPF антигравий</span><span>Химчистка салона</span><span>Тонировка</span><span>Детейлинг двигателя</span><span>Алматы</span><span>Полировка кузова</span><span>Керамическое покрытие</span><span>PPF антигравий</span><span>Химчистка салона</span><span>Тонировка</span><span>Детейлинг двигателя</span><span>Алматы</span>
+  </div>
+</div>
+
+<!-- ─── ABOUT ─── -->
+<section id="about" class="reveal">
+  <div class="about-img-wrap">
+    <div class="about-img">
+      <img src="about_cars.jpg" alt="Детейлинг студия Алматы">
+    </div>
+    <div class="about-img-accent"></div>
+    <div class="about-img-num">Q</div>
+  </div>
+  <div class="about-content">
+    <div class="section-label">О студии</div>
+    <div class="about-title">QALQAN —<em>щит вашего авто</em></div>
+    <p class="about-text">Мы не просто моем машины. Мы создаём защиту, которая работает годами. Каждый проект — это тщательная подготовка поверхности, профессиональные материалы и внимание к каждому миллиметру кузова.<br><br>Работаем только с сертифицированными материалами. Гарантия на все работы.</p>
+    <div class="about-facts">
+      <div class="fact">
+        <div class="fact-num">500+</div>
+        <div class="fact-text">Довольных клиентов</div>
+      </div>
+      <div class="fact">
+        <div class="fact-num">4 года</div>
+        <div class="fact-text">На рынке Алматы</div>
+      </div>
+      <div class="fact">
+        <div class="fact-num">100%</div>
+        <div class="fact-text">Гарантия качества</div>
+      </div>
+      <div class="fact">
+        <div class="fact-num">3</div>
+        <div class="fact-text">Сертифицированных мастера</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SERVICES ─── -->
+<section id="services">
+  <div class="reveal" style="padding: 100px 60px 0;">
+    <div class="services-head">
+      <div>
+        <div class="section-label">Услуги</div>
+        <div class="section-title">ЧТО МЫ<span> ДЕЛАЕМ</span></div>
+      </div>
+      <p>Полный спектр профессиональных услуг по защите и уходу за вашим автомобилем</p>
+    </div>
+  </div>
+  <div class="services-grid reveal">
+    <!-- 1 -->
+    <div class="svc-card">
+      <div class="svc-photo"><img src="svc_polish.jpg" alt="Полировка кузова"></div>
+      <div class="svc-num">01</div>
+      <div class="svc-desc">Удаление царапин, голограмм и дефектов лакокрасочного покрытия. Восстановление зеркального блеска.</div>
+      <div class="svc-price">от 35 000 ₸</div>
+      <a href="#contacts" class="svc-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="svc-card">
+      <div class="svc-photo"><img src="svc_ceramic.jpg" alt="Керамическое покрытие"></div>
+      <div class="svc-num">02</div>
+      <svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      <div class="svc-name">Керамическое покрытие</div>
+      <div class="svc-desc">Нанокерамика 9H — защита кузова на 3–5 лет. Гидрофобный эффект, защита от UV и химии.</div>
+      <div class="svc-price">от 120 000 ₸</div>
+      <a href="#contacts" class="svc-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="svc-card">
+      <div class="svc-photo"><img src="svc_ppf.jpg" alt="Антигравийная плёнка PPF"></div>
+      <div class="svc-num">03</div>
+      <svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+      <div class="svc-name">Антигравийная плёнка PPF</div>
+      <div class="svc-desc">Прозрачная полиуретановая плёнка — невидимый щит от гравия, сколов и царапин. Самовосстанавливающаяся.</div>
+      <div class="svc-price">от 80 000 ₸</div>
+      <a href="#contacts" class="svc-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="svc-card">
+      <div class="svc-photo"><img src="svc_interior.jpg" alt="Химчистка салона"></div>
+      <div class="svc-num">04</div>
+      <svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18"/><circle cx="6" cy="6" r="1"/><circle cx="6" cy="12" r="1"/><circle cx="6" cy="18" r="1"/></svg>
+      <div class="svc-name">Химчистка салона</div>
+      <div class="svc-desc">Глубокая очистка салона: сиденья, потолок, ковры, торпедо. Устранение запахов. Результат — как новый.</div>
+      <div class="svc-price">от 25 000 ₸</div>
+      <a href="#contacts" class="svc-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="svc-card">
+      <div class="svc-photo"><img src="svc_tinting.jpg" alt="Тонировка стёкол"></div>
+      <div class="svc-num">05</div>
+      <svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 8h20"/><circle cx="12" cy="14" r="2"/></svg>
+      <div class="svc-name">Тонировка стёкол</div>
+      <div class="svc-desc">Защита от UV-излучения, приватность, эстетика. Качественные плёнки с гарантией 5 лет.</div>
+      <div class="svc-price">от 18 000 ₸</div>
+      <a href="#contacts" class="svc-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="svc-card">
+      <div class="svc-photo"><img src="svc_engine.jpg" alt="Детейлинг двигателя"></div>
+      <div class="svc-num">06</div>
+      <svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+      <div class="svc-name">Детейлинг двигателя</div>
+      <div class="svc-desc">Профессиональная очистка подкапотного пространства. Защита пластика и резиновых элементов.</div>
+      <div class="svc-price">от 15 000 ₸</div>
+      <a href="#contacts" class="svc-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PRICES ─── -->
+<section id="prices">
+  <div class="prices-head reveal">
+    <div class="section-label">Стоимость</div>
+    <div class="section-title">ЦЕНЫ И<span> ПАКЕТЫ</span></div>
+    <div class="prices-tabs">
+      <button class="ptab active" onclick="switchTab('polish')">Полировка</button>
+      <button class="ptab" onclick="switchTab('ceramic')">Керамика</button>
+      <button class="ptab" onclick="switchTab('ppf')">PPF</button>
+      <button class="ptab" onclick="switchTab('interior')">Салон</button>
+    </div>
+  </div>
+  <div class="price-panels reveal">
+    <!-- POLISH -->
+    <div class="price-panel active" id="tab-polish">
+      <table class="price-table">
+        <thead><tr><th>Услуга</th><th>Что включено</th><th>Цена</th></tr></thead>
+        <tbody>
+          <tr><td>Одношаговая полировка</td><td>Устранение лёгких царапин и матовости</td><td class="price-val">35 000 ₸</td></tr>
+          <tr><td>Двухшаговая полировка</td><td>Глубокая коррекция, удаление голограмм</td><td class="price-val">55 000 ₸</td></tr>
+          <tr><td>Полировка + воск</td><td>Полировка + защитный слой воска</td><td class="price-val">65 000 ₸</td></tr>
+          <tr><td>Полировка + керамика <span class="price-badge">ХИТ</span></td><td>Полная коррекция + нанокерамическое покрытие</td><td class="price-val">160 000 ₸</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- CERAMIC -->
+    <div class="price-panel" id="tab-ceramic">
+      <table class="price-table">
+        <thead><tr><th>Покрытие</th><th>Гарантия / Особенности</th><th>Цена</th></tr></thead>
+        <tbody>
+          <tr><td>Ceramic Lite</td><td>Защита 1 год, гидрофоб</td><td class="price-val">50 000 ₸</td></tr>
+          <tr><td>Ceramic Pro 9H</td><td>Защита 3 года, твёрдость 9H</td><td class="price-val">120 000 ₸</td></tr>
+          <tr><td>Ceramic Pro Gold <span class="price-badge">PREMIUM</span></td><td>Защита 5 лет, пожизненная гарантия*</td><td class="price-val">220 000 ₸</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- PPF -->
+    <div class="price-panel" id="tab-ppf">
+      <table class="price-table">
+        <thead><tr><th>Зона</th><th>Описание</th><th>Цена</th></tr></thead>
+        <tbody>
+          <tr><td>Капот</td><td>Полное или частичное бронирование капота</td><td class="price-val">40 000 ₸</td></tr>
+          <tr><td>Пороги + зеркала</td><td>Защита высоконагружаемых зон</td><td class="price-val">35 000 ₸</td></tr>
+          <tr><td>Передняя зона</td><td>Капот, крылья, бампер, зеркала</td><td class="price-val">110 000 ₸</td></tr>
+          <tr><td>Полный кузов <span class="price-badge">ХИТ</span></td><td>100% кузова — максимальная защита</td><td class="price-val">от 350 000 ₸</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- INTERIOR -->
+    <div class="price-panel" id="tab-interior">
+      <table class="price-table">
+        <thead><tr><th>Пакет</th><th>Что входит</th><th>Цена</th></tr></thead>
+        <tbody>
+          <tr><td>Экспресс</td><td>Пылесос + протирка салона</td><td class="price-val">8 000 ₸</td></tr>
+          <tr><td>Стандарт</td><td>Хим. чистка сидений, ковров, торпедо</td><td class="price-val">25 000 ₸</td></tr>
+          <tr><td>Полный <span class="price-badge">POPULAR</span></td><td>Глубокая хим. чистка + устранение запахов</td><td class="price-val">45 000 ₸</td></tr>
+          <tr><td>Детейлинг двигателя</td><td>Очистка и защита подкапотного пространства</td><td class="price-val">15 000 ₸</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PORTFOLIO GRID ─── -->
+<section id="portfolio">
+  <div class="portfolio-head reveal">
+    <div class="section-label">Портфолио</div>
+    <div class="section-title">НАШИ<span> РАБОТЫ</span></div>
+  </div>
+  <div class="ba-grid reveal">
+    <!-- BMW M5 — wide card -->
+    <div class="ba-card">
+      <div class="ba-img">
+        <img src="bmw_keramika.jpg" alt="BMW M5 керамика" loading="lazy">
+      </div>
+      <div class="ba-overlay"></div>
+      <div class="ba-info">
+        <div class="ba-tag">Керамика</div>
+        <div class="ba-car">BMW M5 F90</div>
+        <div class="ba-work">Ceramic Pro 9H + Полировка двухшаговая</div>
+      </div>
+    </div>
+    <!-- Mercedes G-Wagen PPF -->
+    <div class="ba-card">
+      <div class="ba-img">
+        <img src="mercedes_g63_ppf.jpg" alt="Mercedes G63 PPF" loading="lazy">      </div>
+      <div class="ba-overlay"></div>
+      <div class="ba-info">
+        <div class="ba-tag">PPF</div>
+        <div class="ba-car">Mercedes G63 AMG</div>
+        <div class="ba-work">PPF полный кузов + Ceramic</div>
+      </div>
+    </div>
+    <!-- Toyota Camry 70 полировка -->
+    <div class="ba-card">
+      <div class="ba-img">
+        <img src="camry_polировка.jpg" alt="Toyota Camry 70" loading="lazy" style="object-fit:cover;object-position:center;transform:scale(1.15);">      </div>
+      <div class="ba-overlay"></div>
+      <div class="ba-info">
+        <div class="ba-tag">Полировка</div>
+        <div class="ba-car">Toyota Camry 70</div>
+        <div class="ba-work">Двухшаговая полировка + воск</div>
+      </div>
+    </div>
+    <!-- Toyota Land Cruiser 300 тонировка -->
+    <div class="ba-card">
+      <div class="ba-img">
+        <img src="lc300_tonirovka.jpg" alt="Toyota Land Cruiser 300" loading="lazy">      </div>
+      <div class="ba-overlay"></div>
+      <div class="ba-info">
+        <div class="ba-tag">Тонировка</div>
+        <div class="ba-car">Toyota Land Cruiser 300</div>
+        <div class="ba-work">Тонировка + Детейлинг двигателя</div>
+      </div>
+    </div>
+    <!-- Range Rover -->
+    <div class="ba-card">
+      <div class="ba-img">
+        <img src="range_rover_salon.jpg" alt="Range Rover салон" loading="lazy">      </div>
+      <div class="ba-overlay"></div>
+      <div class="ba-info">
+        <div class="ba-tag">Салон</div>
+        <div class="ba-car">Range Rover Sport</div>
+        <div class="ba-work">Химчистка полная + Устранение запаха</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── BEFORE / AFTER SLIDER ─── -->
+<div class="ba-slider-section reveal">
+  <div style="text-align:center; margin-bottom:40px;">
+    <div class="section-label" style="justify-content:center;"><span style="width:32px;height:1px;background:var(--gold);display:inline-block;"></span>&nbsp;&nbsp;До / После</div>
+    <div class="section-title" style="text-align:center;">СРАВНИТЕ<span> РЕЗУЛЬТАТ</span></div>
+  </div>
+  <div style="max-width:900px;margin:0 auto;position:relative;overflow:hidden;">
+    <img src="do_posle.jpg" alt="До и после полировки" style="width:100%;display:block;object-fit:cover;">
+    <div style="position:absolute;top:20px;left:20px;background:rgba(10,10,10,0.75);color:var(--white);font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding:6px 14px;">ДО</div>
+    <div style="position:absolute;top:20px;right:20px;background:rgba(10,10,10,0.75);color:var(--gold);font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding:6px 14px;">ПОСЛЕ</div>
+    <div style="position:absolute;top:0;bottom:0;left:50%;width:2px;background:var(--gold);opacity:0.7;"></div>
+  </div>
+</div>
+
+<!-- ─── REVIEWS ─── -->
+<section id="reviews">
+  <div class="reviews-head reveal">
+    <div class="section-label">Отзывы</div>
+    <div class="section-title">КЛИЕНТЫ О<span> НАС</span></div>
+  </div>
+  <div class="reviews-grid reveal">
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">Делал керамику на BMW — результат превзошёл ожидания. Машина блестит как зеркало, вода скатывается шариками. Мастера объяснили весь процесс, были очень аккуратны. Однозначно рекомендую!</p>
+      <div class="review-author">
+        <div class="review-ava" style="background:var(--gold-dim);border:1px solid rgba(201,168,76,0.3);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:18px;letter-spacing:1px;color:var(--gold);">АБ</div>
+        <div>
+          <div class="review-name">Азамат Б.</div>
+          <div class="review-car">BMW M5 · Керамика Ceramic Pro 9H</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">Поклеили PPF на весь Porsche Cayenne. Работа идеальная — пузырей нет, стыков не видно. Цена соответствует качеству. Теперь езжу без страха по трассе. Обязательно вернусь на второй авто.</p>
+      <div class="review-author">
+        <div class="review-ava" style="background:var(--gold-dim);border:1px solid rgba(201,168,76,0.3);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:18px;letter-spacing:1px;color:var(--gold);">РМ</div>
+        <div>
+          <div class="review-name">Руслан М.</div>
+          <div class="review-car">Porsche 911 · PPF передняя зона</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">Химчистка салона — полный восторг. Привёз машину с жуткими пятнами на сиденьях и неприятным запахом. Через 6 часов получил авто как с салона. Цена приятно удивила за такое качество.</p>
+      <div class="review-author">
+        <div class="review-ava" style="background:var(--gold-dim);border:1px solid rgba(201,168,76,0.3);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:18px;letter-spacing:1px;color:var(--gold);">АС</div>
+        <div>
+          <div class="review-name">Айгерим С.</div>
+          <div class="review-car">Range Rover · Химчистка Полная</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── WHY US ─── -->
+<section id="why">
+  <div class="why-img-wrap reveal">
+    <div class="why-img">
+      <img src="why_master.jpg" alt="Мастер детейлинг" loading="lazy">    </div>
+    <div class="why-badge">
+      <div class="why-badge-num">99%</div>
+      <div class="why-badge-text">Довольных клиентов</div>
+    </div>
+  </div>
+  <div class="reveal">
+    <div class="section-label">Почему мы</div>
+    <div class="section-title">НАШ<span> ПОДХОД</span></div>
+    <div class="why-points">
+      <div class="why-point">
+        <div class="why-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <div class="why-title">Сертифицированные материалы</div>
+          <div class="why-desc">Работаем только с профессиональными брендами: Ceramic Pro, XPEL, 3M. Поддельного — ноль.</div>
+        </div>
+      </div>
+      <div class="why-point">
+        <div class="why-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div>
+          <div class="why-title">Точные сроки</div>
+          <div class="why-desc">Называем дату и сдаём вовремя. Задержки — крайне редкое исключение, о котором предупреждаем заранее.</div>
+        </div>
+      </div>
+      <div class="why-point">
+        <div class="why-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3z"/><path d="M7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+        </div>
+        <div>
+          <div class="why-title">Гарантия на все работы</div>
+          <div class="why-desc">Письменная гарантия на каждую услугу. Любой дефект по нашей вине — устраняем бесплатно.</div>
+        </div>
+      </div>
+      <div class="why-point">
+        <div class="why-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div>
+          <div class="why-title">Индивидуальный подход</div>
+          <div class="why-desc">Осматриваем каждый автомобиль перед работой. Рекомендуем только то, что реально нужно вашей машине.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CONTACTS ─── -->
+<section id="contacts">
+  <div class="contacts-left reveal">
+    <div class="section-label">Контакты</div>
+    <div class="section-title">СВЯЖИТЕСЬ<span> С НАМИ</span></div>
+    <div class="contact-info-list">
+      <div class="contact-item">
+        <div class="contact-ico">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l1.17-1.17a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">Телефон</div>
+          <div class="contact-val"><a href="tel:+77070000000">+7 707 000 00 00</a></div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-ico">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">Адрес</div>
+          <div class="contact-val">Алматы, ул. Розыбакиева 247</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-ico">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">Часы работы</div>
+          <div class="contact-val">Пн–Сб: 9:00 – 20:00</div>
+        </div>
+      </div>
+    </div>
+    <div class="social-row">
+      <a href="#" class="social-btn" title="Instagram">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="#" class="social-btn" title="Telegram">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-1.97 9.289c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.932z"/></svg>
+      </a>
+      <a href="#" class="social-btn" title="WhatsApp">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      </a>
+    </div>
+  </div>
+  <!-- Form -->
+  <div class="contacts-right reveal">
+    <div class="form-title">ЗАПИСАТЬСЯ</div>
+    <div class="form-sub">Оставьте заявку — перезвоним в течение 30 минут</div>
+    <div id="contactForm">
+      <div class="form-row">
+        <div class="form-group">
+          <input type="text" id="cName" placeholder="Ваше имя" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" id="cPhone" placeholder="+7 ___ ___ __ __" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <select id="cService">
+          <option value="">— Выберите услугу —</option>
+          <option>Полировка кузова</option>
+          <option>Керамическое покрытие</option>
+          <option>Антигравийная плёнка PPF</option>
+          <option>Химчистка салона</option>
+          <option>Тонировка стёкол</option>
+          <option>Детейлинг двигателя</option>
+          <option>Не знаю — нужна консультация</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <input type="text" id="cCar" placeholder="Марка и модель авто">
+      </div>
+      <div class="form-group">
+        <textarea id="cMsg" placeholder="Комментарий (необязательно)"></textarea>
+      </div>
+      <button class="form-submit" onclick="submitForm()">
+        Отправить заявку →
+      </button>
+    </div>
+    <div class="form-success" id="formSuccess">
+      <div class="form-success-ico">✓</div>
+      <h3>ЗАЯВКА ПРИНЯТА</h3>
+      <p>Свяжемся с вами в течение 30 минут.<br>Или напишите напрямую в Telegram.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="footer-logo">QALQAN<span>◆</span>DETAIL</div>
+  <div class="footer-copy">© 2025 QALQAN DETAIL · Алматы, Казахстан<br>Все права защищены</div>
+  <div class="footer-dev">Разработка сайта: <a href="https://t.me/orazalauof" target="_blank">Оразалы</a></div>
+</footer>
+
+<script>
+// ── Nav scroll ──
+window.addEventListener('scroll', () => {
+  document.getElementById('mainNav').classList.toggle('scrolled', scrollY > 60);
+});
+
+// ── Mobile menu ──
+function toggleMenu(){
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+
+// ── Price tabs ──
+function switchTab(id){
+  document.querySelectorAll('.price-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.ptab').forEach(t => t.classList.remove('active'));
+  document.getElementById('tab-'+id).classList.add('active');
+  event.target.classList.add('active');
+}
+
+
+// ── Scroll reveal ──
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+// ── Form ──
+function submitForm(){
+  const name = document.getElementById('cName').value.trim();
+  const phone = document.getElementById('cPhone').value.trim();
+  if(!name || !phone){ alert('Пожалуйста, заполните имя и телефон.'); return; }
+  document.getElementById('contactForm').style.display='none';
+  document.getElementById('formSuccess').style.display='block';
+}
+</script>
+</body>
+</html>
